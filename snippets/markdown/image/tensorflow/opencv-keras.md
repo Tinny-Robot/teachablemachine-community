@@ -5,7 +5,7 @@ from keras.models import load_model
 import numpy as np
 
 
-# Load the model
+# Load the pre-trained model
 model = load_model('keras_model.h5')
 
 # CAMERA can be 0 or 1 based on default camera of your computer.
