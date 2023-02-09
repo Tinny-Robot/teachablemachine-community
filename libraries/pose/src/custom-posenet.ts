@@ -73,9 +73,10 @@ const isMetadata = (c: any): c is Metadata =>
 	Array.isArray(c.labels);
 
 /**
- * process either a URL string or a Metadata object
- * @param metadata a url to load metadata or a Metadata object
- */
+
+ * process either an image URL string or an Image object
+ * @param image a url to load an image or an Image object
+*/
 const processMetadata = async (metadata: string | Metadata) => {
 	let metadataJSON: Metadata;
 	if (typeof metadata === "string") {
